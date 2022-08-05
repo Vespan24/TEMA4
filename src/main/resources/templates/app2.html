@@ -6,15 +6,15 @@
 </head>
 <body>
 
-<div th:if="${customers.getId()}==${getById(id)}">
+<div th:object="customers: ${getById(id)}}">
     <p th:text="${customers.getId()}"></p>
-    <p th:text="${student.getUsername()}"></p>
-    <p th:text="${student.getFirst_Name()}"></p>
-    <p th:text="${student.getLast_Name()}"></p>
-    <p th:text="${student.getPhone()}"></p>
-    <p th:text="${student.getCity()}"></p>
-    <p th:text="${student.getPostalCode()}"></p>
-    <p th:text="${student.getCountry()}"></p>
+    <p th:text="${customers.getUsername()}"></p>
+    <p th:text="${customers.getFirst_Name()}"></p>
+    <p th:text="${customers.getLast_Name()}"></p>
+    <p th:text="${customers.getPhone()}"></p>
+    <p th:text="${customers.getCity()}"></p>
+    <p th:text="${customers.getPostalCode()}"></p>
+    <p th:text="${customers.getCountry()}"></p>
 </div>
 </body>
 </html>
