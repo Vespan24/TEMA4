@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 public class OrderdetailsController {
-    @Autowired
+   /* @Autowired
     OrderdetailsService orderdetailsService;
 
     @GetMapping("/orderdetails/all")
@@ -34,6 +34,6 @@ public class OrderdetailsController {
     @ResponseBody
     public void deleteOrderdetails(@PathVariable Integer id){
         orderdetailsService.deleteOrderdetails(id);
-    }
+    }*/
 
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ro" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:if="${customers.getId()}==${getById(id)}">
+    <p th:text="${customers.getId()}"></p>
+    <p th:text="${student.getUsername()}"></p>
+    <p th:text="${student.getFirst_Name()}"></p>
+    <p th:text="${student.getLast_Name()}"></p>
+    <p th:text="${student.getPhone()}"></p>
+    <p th:text="${student.getCity()}"></p>
+    <p th:text="${student.getPostalCode()}"></p>
+    <p th:text="${student.getCountry()}"></p>
+</div>
+</body>
+</html>
