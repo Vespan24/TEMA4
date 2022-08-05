@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<div th:each="customers: ${getById($[id])}}">
+<div th:each="customers: ${getById(${id})}}">
     <p th:text="${customers.getId()}"></p>
     <p th:text="${customers.getUsername()}"></p>
     <p th:text="${customers.getFirst_Name()}"></p>
